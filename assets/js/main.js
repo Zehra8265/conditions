@@ -10,7 +10,7 @@ var teklik=num%10;
 var onluq=((num-teklik)%100)/10;
 var a=(onluq*10)+teklik;
 var yuzluk=(num-a)/100;
-if(teklik==onluq==yuzluk)
+if(teklik==onluq && onluq==yuzluk && teklik==yuzluk)
 {
     alert("Beraberdir")
 }
@@ -32,6 +32,9 @@ else{
 //   'r' hərfinə bərabərdirsə "Rus dili seçildi" yazısı gəlsin (output).
 //    Digər bütün hallarda 
 //  "Yanlış sorğu" yazısı gəlsin(output).
+
+
+
 
 var herf=prompt("herf daxil edin")
 switch(herf){
